@@ -18,16 +18,19 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: JMS2waySSL
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Karthik-V-IBM-10
@@ -39,6 +42,12 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -48,6 +57,12 @@ services:
   - name: Kvv_2803_dev5445940Project
     version: "1.0"
   - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -59,6 +74,12 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -69,6 +90,36 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_2803_dev5445940.integrations:SSL_JDBC_test
+  packages:
+  - name: Kvv_2803_dev5445940Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: SSL_JDBC_Test.services:insert_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -78,6 +129,12 @@ services:
   - name: Kvv_2803_dev5445940Project
     version: "1.0"
   - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -97,6 +154,12 @@ services:
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -106,49 +169,49 @@ services:
   - name: TPP_services_in_FCS
     version: "1.0"
 configurationVariables:
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
-  : "10"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
-  : 9.46.196.248
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "3306"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : mysql
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : MySQL
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
-  : "10"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
   : ""
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
   : "false"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : siqatest
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : MYSQL_DATABASE
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
   : tcp
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
-  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
-  : "1"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Kvv_2803_dev5445940Project.project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
