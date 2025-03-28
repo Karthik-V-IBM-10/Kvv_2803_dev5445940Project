@@ -8,6 +8,14 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: sanity
 services:
+- serviceName: project.kvv_2803_dev5445940.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: Kvv_2803_dev5445940Project
+    version: "1.0"
+- serviceName: project.kvv_2803_dev5445940.integrations:SIQAAdapterFlow
+  packages:
+  - name: Kvv_2803_dev5445940Project
+    version: "1.0"
 - serviceName: project.kvv_2803_dev5445940.integrations:Sum
   packages:
   - name: Kvv_2803_dev5445940Project
