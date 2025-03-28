@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Karthik.V10@ibm.com</value>
-    <value name="createdDate">1743161144133</value>
-    <value name="lastModifiedDate">1743161144133</value>
+    <value name="lastModifiedBy">Karthik.V10@ibm.com</value>
+    <value name="lastModifiedDate">1743161150468</value>
     <value name="displayName">tppdaf</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -60,6 +59,13 @@
           <null name="services"/>
         </record>
         <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">services:add3Ints</value>
+          <value name="serviceName">services:add3Ints</value>
+          <value name="displayName">add3Ints</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
       </record>
     </record>
   </record>

@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="TPP_services_in_FCS">
+<INVOKE NAME="TPP_services_in_FCS" SERVICE="services:add3Ints">
   <COMMENT></COMMENT>
 </INVOKE>
 </FLOW>
